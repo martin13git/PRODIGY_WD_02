@@ -11,3 +11,305 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.clrlaps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.stopwatch {
+  display: inline-block;
+  padding: 20px;
+  border: 4px solid #f16e16;
+  border-radius: 10px;
+  background-color: #f5dece;
+  margin: 10px;
+}
+
+.stopwatch.running {
+  border-color: #4caf50;
+}
+
+.time-display {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  font-size: 16px;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: #f0a573;
+}
+
+.laps {
+  margin-top: 20px;
+  padding-inline: 450px;
+}
+
+.laps table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.laps th, .laps td {
+  border-bottom: 2px solid #f16e16;
+  padding: 8px;
+  text-align: center;
+}
+
+.laps th {
+  background-color: #fbc9a8;
+}
+
+.lapserial {
+  color: #626262;
+}
+
+.laptime {
+  color: #f16e16;
+  font-weight: bold;
+  font-size: large;
+}
+
+.clear-laps-button {
+  font-size: 16px;
+  margin: 5px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #dc3545;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+.clear-laps-button i {
+  margin-right: 8px;
+}
+
+.clear-laps-button:hover {
+  background: #c82333;
+}
+
+.stlogo {
+  height: auto;
+  max-width: 10%;
+  width: 10%;
+}
+
+.header{
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.header h1{
+  color: #f16e16;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .laps {
+    padding-inline: 300px;
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .laps {
+    padding-inline: 150px;
+  }
+  
+  
+}
+
+@media (max-width: 768px) {
+  .stopwatch {
+    width: 90%;
+  }
+
+  .laps {
+    padding-inline: 50px;
+  }
+
+  .time-display {
+    font-size: 36px;
+  }
+
+  .controls button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .laps th, .laps td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .clear-laps-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stopwatch {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .time-display {
+    font-size: 24px;
+  }
+
+  .controls button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .laps {
+    padding-inline: 100px;
+  }
+
+  .laps th, .laps td {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .clear-laps-button {
+    font-size: 22px;
+    padding: 6px 12px;
+  }
+}
+
+.footer-area {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  flex: 1 1 250px;
+  margin-bottom: 30px;
+}
+
+.footer-img img {
+  width: 100px;
+  height: auto;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.contact-item h5{
+  margin: 0;
+}
+
+.contact-item i {
+  margin-right: 10px;
+}
+
+.footer-content {
+  flex: 1 1 200px;
+  margin-bottom: 30px;
+}
+
+.footer-content h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.btn-bd-subscribe {
+  background-color: #f0a573;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-bd-subscribe:hover {
+  background-color: #e59261;
+}
+
+.footer-signature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.social-links h4 {
+  margin-bottom: 10px;
+}
+
+.social-links i {
+  margin-right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-img img {
+    width: 80px;
+  }
+
+  .footer-content {
+    flex-basis: 100%;
+  }
+}
